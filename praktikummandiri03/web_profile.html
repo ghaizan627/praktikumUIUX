@@ -20,7 +20,6 @@
 
       .biodata {
         display: flex;
-        align-items: center;
         padding: 20px;
         gap: 7rem;
       }
@@ -45,6 +44,10 @@
         gap: 1.2em;
         width: 100%;
         height: 100%;
+      }
+      .biodata .categories {
+        padding: 20px;
+        width: 200px;
       }
       .deskripsi-diri {
         padding: 20px;
@@ -74,10 +77,14 @@
       .konten-multimedia .koleksi-foto img {
         width: 100px;
       }
-      .konten-multimedia .download-file {
+      .konten-multimedia .download-file fieldset {
         display: flex;
         flex-direction: column;
         gap: 1em;
+        padding: 10px;
+      }
+      .konten-multimedia .download-file fieldset legend {
+        font-weight: bolder;
       }
     </style>
   </head>
@@ -101,6 +108,13 @@
             >@ghaizanaf</a
           >
         </p>
+      </div>
+      <div class="categories">
+        <h3>Minat dan bakat</h3>
+        <p>Olahraga</p>
+        <p>Gane</p>
+        <p>Music punk</p>
+        <p>Ngaji</p>
       </div>
     </div>
     <div class="deskripsi-diri">
@@ -156,22 +170,24 @@
         />
       </div>
       <div class="download-file">
-        <h3>Download File Prakktikum Lainnya</h3>
-        <a
-          href="../praktikummandiri01/kelompok_8_desainuiux_pemweb.html"
-          download="kelompok_8_desainuiux_pemweb.html"
-          >download_file_prakktikum01</a
-        >
-        <a
-          href="../praktikummandiri02/prak2_kelompok_8_desainuiux_pemweb.html"
-          download="prak2_kelompok_8_desainuiux_pemweb.html"
-          >download_file_prakktikum02</a
-        >
-        <a
-          href="../praktikummandiri03/web_profile.html"
-          download="web_profile.html"
-          >download_file_prakktikum03</a
-        >
+        <fieldset>
+          <legend>Download File Prakktikum Lainnya</legend>
+          <a
+            href="../praktikummandiri01/kelompok_8_desainuiux_pemweb.html"
+            download="kelompok_8_desainuiux_pemweb.html"
+            >download_file_prakktikum01</a
+          >
+          <a
+            href="../praktikummandiri02/prak2_kelompok_8_desainuiux_pemweb.html"
+            download="prak2_kelompok_8_desainuiux_pemweb.html"
+            >download_file_prakktikum02</a
+          >
+          <a
+            href="../praktikummandiri03/web_profile.html"
+            download="web_profile.html"
+            >download_file_prakktikum03</a
+          >
+        </fieldset>
       </div>
     </div>
   </body>
