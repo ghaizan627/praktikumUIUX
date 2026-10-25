@@ -75,12 +75,37 @@ h3 {
 
   img {
     width: 200px;
+    border: solid 3px #0d09bf;
   }
 }
 
 .promo {
-  h2,h3 {
+  h2,
+  h3 {
     color: #0d09bf;
     text-align: center;
+  }
+}
+
+.ecommerce-link {
+  margin-top: 30px;
+  h4 {
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+
+    li {
+      a {
+        text-decoration: none;
+        color: white;
+        background-color: #0d09bf;
+        padding: 10px;
+        border-radius: 40px;
+      }
+    }
   }
 }
